@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/hekai/Desktop/ai-agent-wiki/raw/assets)",
+      "Bash(mkdir -p /Users/hekai/Desktop/ai-agent-wiki/wiki)"
+    ]
+  }
+}

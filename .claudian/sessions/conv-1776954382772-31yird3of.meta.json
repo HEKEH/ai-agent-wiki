@@ -1,0 +1,23 @@
+{
+  "id": "conv-1776954382772-31yird3of",
+  "providerId": "claude",
+  "title": "Ingest Scaling Managed Agents Decoupling articl...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1776954382772,
+  "updatedAt": 1776955214182,
+  "lastResponseAt": 1776955214182,
+  "sessionId": "740e13ec-6ad7-4eab-a0af-3b3876d24768",
+  "providerState": {
+    "providerSessionId": "740e13ec-6ad7-4eab-a0af-3b3876d24768"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 231,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 49600,
+    "contextWindow": 200000,
+    "contextTokens": 49831,
+    "percentage": 25,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -3,13 +3,12 @@
   "providerId": "claude",
   "title": "4月23日 22:00",
   "createdAt": 1776952842809,
-  "updatedAt": 1776952869240,
+  "updatedAt": 1776954379890,
   "lastResponseAt": 1776952869240,
   "sessionId": "885401ce-cdc5-4b10-8e7b-b95c0472da44",
   "providerState": {
     "providerSessionId": "885401ce-cdc5-4b10-8e7b-b95c0472da44"
   },
-  "currentNote": "wiki/index.md",
   "usage": {
     "model": "haiku",
     "inputTokens": 119,

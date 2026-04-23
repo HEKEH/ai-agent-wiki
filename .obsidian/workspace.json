@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5d31db522d19b80c",
+        "id": "307dbcd4854cb041",
         "type": "tabs",
         "children": [
           {
-            "id": "38777f706ca3026d",
+            "id": "59b83977fdcaa30d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/brain-hands-session.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "brain-hands-session"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wiki/concepts/brain-hands-session.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "brain-hands-session 的反向链接列表"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "wiki/concepts/brain-hands-session.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "brain-hands-session 的出链列表"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "wiki/concepts/brain-hands-session.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "brain-hands-session 的大纲"
             }
           },
           {
@@ -183,7 +190,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5
+    "width": 483.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,11 +206,25 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "b5ad6cf737bd7760",
+  "active": "45862c4e128dac50",
   "lastOpenFiles": [
+    "wiki/concepts/bitter-lesson.md",
+    "wiki/entities/Anthropic.md",
+    "wiki/entities/Claude.md",
+    "wiki/concepts/harness.md",
+    "wiki/entities/Managed-Agents.md",
     "wiki/index.md",
-    "wiki/home.md",
     "wiki/log.md",
+    "wiki/sources/Scaling-Managed-Agents-Decoupling.md",
+    "wiki/home.md",
+    "raw/Scaling-Managed-Agents-Decoupling.md",
+    "wiki/concepts/brain-hands-session.md",
+    "wiki/concepts/context-engineering.md",
+    "wiki/concepts/meta-harness.md",
+    "wiki/concepts/context-anxiety.md",
+    "wiki/concepts/pets-vs-cattle.md",
+    "wiki/concepts/sandbox.md",
+    "wiki/concepts/session.md",
     "CLAUDE.md",
     "llm-wiki.md"
   ]

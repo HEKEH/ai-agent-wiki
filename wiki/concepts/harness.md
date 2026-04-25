@@ -2,7 +2,7 @@
 
 tags: [agent-architecture, orchestration, loop]
 date: 2026-04-23
-sources: [../../raw/Scaling-Managed-Agents-Decoupling.md]
+sources: [../../raw/Scaling-Managed-Agents-Decoupling.md, ../../raw/Effective-harnesses-for-long.md]
 status: active
 
 ## Definition
@@ -34,6 +34,16 @@ Harness 编码了对模型能力的假设（如"[Claude 不能自己处理上下
 
 解耦后，harness 通过 `execute(name, input) → string` 调用容器，与调用其他工具无异。
 
+## Harness 的长时运行设计
+
+[Effective Harnesses for Long-Running Agents](../sources/Effective-Harnesses-for-Long-Running-Agents.md) 揭示了 harness 在长时运行场景下的具体设计模式：
+
+- **Initializer/Coding Agent 分工** — 在同一 harness 内通过不同 prompt 实现角色切换，第一个 session 搭建环境，后续 session 增量推进
+- **标准化 session 启动流程** — pwd → 读 progress → 读 feature list → git log → 冒烟测试 → 开始工作
+- **结构化交接** — progress file + git history + feature list 构成跨 session 的三重上下文
+
+这与 [Meta-harness](meta-harness.md) 不同——meta-harness 容纳不同 harness 实现，而 Initializer/Coding 模式在同一 harness 内切换 prompt。
+
 ## 与 Meta-harness 的关系
 
 [Meta-harness](meta-harness.md) 是容纳多种 harness 实现的系统。Managed Agents 不限定特定 harness——Claude Code 是一种 harness，任务特定的窄域 harness 也可以。Meta-harness 对接口有主见，对 harness 实现无主见。
@@ -45,3 +55,6 @@ Harness 编码了对模型能力的假设（如"[Claude 不能自己处理上下
 - [Context Engineering](context-engineering.md) — harness 的核心关注点
 - [Meta-harness](meta-harness.md) — harness 的容器系统
 - [Context Anxiety](context-anxiety.md) — 驱动 harness 设计的模型行为
+- [Long-Running Agent](long-running-agent.md) — harness 必须跨 context window 工作的场景
+- [Initializer/Coding Agent 模式](initializer-coding-agent.md) — harness 在长时运行中的具体设计
+- [Feature List Pattern](feature-list-pattern.md) — harness 内的结构化需求追踪机制

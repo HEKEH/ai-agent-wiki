@@ -15,6 +15,14 @@ Catalog of all wiki pages, organized by category. Updated on every ingest.
 
 ## Concepts
 
+- [Agentic Systems 分类框架](concepts/agentic-systems.md) — Anthropic 对 Agentic Systems 的统一分类：Workflows vs Agents
+- [The Augmented LLM](concepts/augmented-llm.md) — 一切 Agent 系统的基础构件：LLM + 检索 + 工具 + 记忆
+- [Prompt Chaining](concepts/prompt-chaining.md) — 串行分解任务的 Workflow 模式
+- [Routing](concepts/routing.md) — 分类输入并路由到专门处理的 Workflow 模式
+- [Parallelization](concepts/parallelization.md) — 并行分片/投票的 Workflow 模式
+- [Orchestrator-Workers](concepts/orchestrator-workers.md) — 中心 LLM 动态拆解委派的 Workflow 模式
+- [Evaluator-Optimizer](concepts/evaluator-optimizer.md) — 生成-评估循环迭代的 Workflow 模式
+- [Agent-Computer Interface (ACI)](concepts/aci.md) — 为 Agent 设计工具接口，类比 HCI
 - [Session](concepts/session.md) — Agent 运行中的追加写入事件日志，持久化存储
 - [Harness](concepts/harness.md) — Agent 的"大脑"，调用 Claude 并路由工具的循环
 - [Sandbox](concepts/sandbox.md) — Agent 的"双手"，代码执行和文件编辑环境
@@ -30,6 +38,7 @@ Catalog of all wiki pages, organized by category. Updated on every ingest.
 
 ## Sources
 
+- [Building Effective AI Agents](sources/Building-Effective-AI-Agents.md) — Anthropic 工程博客：Agent 系统分类框架与五种 Workflow 模式
 - [Scaling Managed Agents: Decoupling](sources/Scaling-Managed-Agents-Decoupling.md) — Anthropic 工程博客：解耦 Brain、Hands、Session 的架构设计
 - [Effective Harnesses for Long-Running Agents](sources/Effective-Harnesses-for-Long-Running-Agents.md) — Anthropic 工程博客：Initializer/Coding Agent 双模式解决跨 context window 长时运行问题
 

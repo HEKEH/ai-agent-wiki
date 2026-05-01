@@ -58,3 +58,12 @@ Harness 编码了对模型能力的假设（如"[Claude 不能自己处理上下
 - [Long-Running Agent](long-running-agent.md) — harness 必须跨 context window 工作的场景
 - [Initializer/Coding Agent 模式](initializer-coding-agent.md) — harness 在长时运行中的具体设计
 - [Feature List Pattern](feature-list-pattern.md) — harness 内的结构化需求追踪机制
+
+## Harness 与 Agentic Systems 分类
+
+从 [Agentic Systems 分类框架](agentic-systems.md) 的角度看，Harness 是 Workflow 和 Agent 的**运行时实现**：
+
+- Harness 的 Agent 循环（调用 LLM → 路由工具 → 返回结果 → 重复）本质上是 [The Augmented LLM](augmented-llm.md) 的循环实例化
+- Harness 中预定义的工具调用路径对应 [Workflows](agentic-systems.md)，如 [Prompt Chaining](prompt-chaining.md) 和 [Routing](routing.md)
+- 当 Harness 允许 LLM 自主决定下一步操作时，即为 [Agents](agentic-systems.md) 模式
+- [Agent-Computer Interface (ACI)](aci.md) 原则应指导 Harness 中工具的路由和接口设计
